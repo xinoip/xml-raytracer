@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+    <maxraytracedepth>6</maxraytracedepth>
+    <background>0 1 2</background>
+    <camera>
+        <position>0.3 0.1 0</position>
+        <gaze>0 0 -1</gaze>
+        <up>0 1 0</up>
+        <nearplane>-1 1 -1 1</nearplane>
+        <neardistance>1</neardistance>
+        <imageresolution>800 800</imageresolution>
+    </camera>
+    <lights>
+        <ambientlight>50 50 0</ambientlight>
+        <pointlight id="1">
+            <position>0 0 0</position>
+            <intensity>600 600 600</intensity>
+        </pointlight>
+    </lights>
+    <materials>
+        <material id="1">
+            <ambient>0.3 0.3 0.3</ambient>
+            <diffuse>0.8 0.8 0.8</diffuse>
+            <specular>1 1 1</specular>
+            <phongexponent>2</phongexponent>
+            <mirrorreflectance>0 0 0</mirrorreflectance>
+        </material>
+        <material id="2">
+            <ambient>0 1 0</ambient>
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <phongexponent>2</phongexponent>
+            <mirrorreflectance>1 0 0</mirrorreflectance>
+        </material>
+        <material id="3">
+            <ambient>0 0 1</ambient>
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <phongexponent>3</phongexponent>
+            <mirrorreflectance>1 0 0</mirrorreflectance>
+        </material>
+        <material id="4">
+            <ambient>1 1 1</ambient>
+            <diffuse>1 1 1</diffuse>
+            <specular>1 1 1</specular>
+            <phongexponent>3</phongexponent>
+            <mirrorreflectance>1 0 0</mirrorreflectance>
+        </material>
+        <material id="5">
+            <ambient>0.2 0.2 0.2</ambient>
+            <diffuse>1 0 1</diffuse>
+            <specular>1 1 1</specular>
+            <phongexponent>1</phongexponent>
+            <mirrorreflectance>0.3 0.3 0.3</mirrorreflectance>
+        </material>
+    </materials>
+    <vertexdata>
+        0 1 -3
+        0.5 0.5 -3
+        0 0 -3
+        -0.5 0.5 -3
+        0 0.5 -3
+        0.1 0.1 -0.7
+        0.1 -0.1 -0.7
+        0.12 0 -0.7
+
+        -0.5 -2 0
+        2 -2 0
+        -2 4 -10
+        2 4 -10
+    </vertexdata>
+    <objects>
+        <!-- <mesh id="2">
+
+            <materialid>2</materialid>
+            <faces>
+                6 7 8
+            </faces>
+        </mesh> -->
+        <mesh id="5">
+            <materialid>5</materialid>
+            <faces>
+                9 10 11
+            </faces>
+        </mesh>
+        <mesh id="5">
+            <materialid>5</materialid>
+            <faces>
+                10 12 11
+            </faces>
+        </mesh>
+        <mesh id="3">
+            <materialid>1</materialid>
+            <faces>
+                5 2 1
+                5 3 2
+                5 4 3
+                5 1 4
+
+            </faces>
+        </mesh>
+    </objects>
+</scene>
